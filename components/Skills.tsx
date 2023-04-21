@@ -4,7 +4,7 @@ import IconBrandPython from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/bran
 import IconBrandNextjs from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-nextjs.tsx"
 import IconBrandTailwind from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-tailwind.tsx"
 import IconBrandDeno from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-deno.tsx"
-import { IconBrandRust, IconBrandJavascript, IconBrandAws, IconBrandReact, IconSql } from 'npm:@tabler/icons-preact';
+import { IconBrandRust, IconBrandJavascript, IconBrandAws, IconBrandReact, IconSql } from '@tabler/icons-preact';
 export const Skills = () => {
     return (
         <>

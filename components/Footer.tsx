@@ -1,5 +1,4 @@
 import { ComponentChildren } from "preact";
-import LemonIcon from "https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/lemon-2.tsx";
 import BrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/brand-github.tsx";
 type Props = {
     children: ComponentChildren;
