@@ -1,0 +1,56 @@
+import {Work, WorksList} from "./types.ts";
+const Project = (props: Work) => (
+    <a href={props.url} rel="noopener" target="_blank">
+        <div
+            class="bg-white shadow-lg rounded-lg p-5"
+        >
+            <div class="bg-gray rounded-lg p-2 text-center h-full">
+                <h4 class="text-xl font-semibold mb-2">{props.title}</h4>
+                <p class="text-gray-700">{props.description}</p>
+            </div>
+        </div>
+    </a>
+);
+
+const Works = () => {
+    const works: WorksList = [
+        {
+            title: "Stead08のポートフォリオ",
+            description: "このサイトです。",
+            url: "https://stead08.github.io",
+        },
+        {
+            title: "Stead Profile",
+            description: "FreshとMicroCMSで構築した自分の記事まとめサイト",
+            url: "https://fresh-microcms.deno.dev/",
+        },
+        {
+            title: "距離・運賃計算システム",
+            description: "ゼミの研究のために作ったものです。",
+            url: "https://stead08-omisegohanproject-streamlit-app-04qdaj.streamlit.app/",
+        },
+        {
+            title: "シラバス検索システム",
+            description: "ローカルでの使用を想定しているので外部からはアクセスできません。",
+            url: "https://github.com/Stead08/syllabus_search_system",
+        },
+        {
+            title: "ブログサイト",
+            description: "Next.jsとsupabaseで構築したブログサイト（モック）です。",
+            url: "https://nextjs-supabase-blog-practice-kwpusq5nf-stead08.vercel.app/",
+        },
+    ];
+
+    return (
+        <>
+            <h3 id="works" className="text-3xl font-bold uppercase text-gray-600 dark:text-gray-400 lg:text-center">Works</h3>
+            <div class="grid grid-cols-2 gap-4">
+                {works.map((work) => (
+                    <Project {...work} />
+                ))}
+            </div>
+        </>
+    )
+}
+
+export default Works;
