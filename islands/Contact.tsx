@@ -1,5 +1,6 @@
 import {useCallback, useState} from "preact/hooks";
 import IconLoaderQuarter from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/loader-quarter.tsx"
+import "dotenv/load.ts";
 
 interface Form {
     mail: string;
