@@ -32,6 +32,7 @@ export const Contact = () => {
             setStatus("sent");
         } catch (e) {
             setStatus("error");
+            console.log(e);
         }
     }, [form]);
     return (
