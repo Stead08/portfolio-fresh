@@ -1,6 +1,6 @@
 import {useCallback, useState} from "preact/hooks";
-import IconLoaderQuarter from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/loader-quarter.tsx"
-import "dotenv/load.ts";
+import IconLoaderQuarter from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/loader-quarter.tsx";
+import { microcmsClient } from "../lib/MicroCMSClient.ts";
 
 interface Form {
     mail: string;
@@ -17,20 +17,18 @@ export const Contact = () => {
         event.preventDefault();
         try {
             setStatus("sending");
-            const response = await fetch("https://vzh782w7u9.microcms.io/api/v1/contact",
-                {
-                    method: "POST",
-                    headers: {
-                        "X-MICROCMS-API-KEY": Deno.env.get("X-MICROCMS-API-KEY"),
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify({
-                        "email": form.mail,
-                        "message": form.message,
-                    }),
-                });
-            if (response.status !== 201) throw Error;
-            setStatus("sent");
+            const response = await microcmsClient.create<Form>({
+                endpoint: 'contact',
+                content: {
+                    email: form.mail,
+                    message: form.message,
+                },
+            })
+                .then((res) => {
+                    setStatus("sent");
+                    console.log(res);
+                })
+                .catch((err) => console.log(err));
         } catch (e) {
             setStatus("error");
             console.log(e);
