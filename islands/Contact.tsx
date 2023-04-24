@@ -15,7 +15,6 @@ export const Contact = () => {
     });
     const submit = useCallback(async (event: Event) => {
         event.preventDefault();
-        try {
             setStatus("sending");
             const response = await microcmsClient.create<Form>({
                 endpoint: 'contact',
@@ -28,11 +27,10 @@ export const Contact = () => {
                     setStatus("sent");
                     console.log(res);
                 })
-                .catch((err) => console.log(err));
-        } catch (e) {
-            setStatus("error");
-            console.log(e);
-        }
+                .catch((err) => {
+                    setStatus("error");
+                    console.log(err)}
+                );
     }, [form]);
     return (
         <section
