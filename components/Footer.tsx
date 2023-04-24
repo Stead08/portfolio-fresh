@@ -27,7 +27,7 @@ export default function Footer({ children }: Props) {
                 </div>
 
                 <a
-                    href="https://github.com/denoland/fresh"
+                    href="https://github.com/Stead08/portfolio-fresh"
                     class="inline-block hover:text-black"
                 >
                     <BrandGithub />
