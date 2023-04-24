@@ -14,7 +14,7 @@ export default function Home() {
             <div class="flex justify-center">
                 <Header active="/"/>
             </div>
-            <div class="mx-auto max-w-screen-lg px-2 pt-10 pb-[25.5rem] md:pb-[13.5rem]">
+            <div class="mx-auto max-w-screen-lg px-2 pt-10 pb-[25.5rem] md:pb-[7.5rem]">
                 <div class="space-y-10">
                     <Hero/>
                     <Works/>

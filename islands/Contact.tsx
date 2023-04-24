@@ -2,7 +2,7 @@ import {useCallback, useState} from "preact/hooks";
 import IconLoaderQuarter from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/loader-quarter.tsx";
 import {microcmsClient} from "../lib/MicroCMSClient.ts";
 
-interface Form {
+type Form = {
     mail: string;
     message: string;
 }
@@ -40,10 +40,10 @@ export const Contact = () => {
         >
             <h3 className="text-3xl font-bold uppercase text-gray-600 lg:text-center">Contact</h3>
             <div>
-                {status === "sent" ? <h3>sent</h3>
+                {status === "sent" ? <h3 className="flex justify-center text-sm uppercase">sent</h3>
                     : (
                         <form onSubmit={submit} className="space-y-3">
-                            {status === "error" && <h3>error</h3>}
+                            {status === "error" && <h3 className="flex justify-center text-sm uppercase">error</h3>}
                             <div className="space-y-1">
                                 <label for="mail" className="text-sm uppercase">
                                     email
