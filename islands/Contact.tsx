@@ -1,25 +1,21 @@
 import {useCallback, useState} from "preact/hooks";
 import IconLoaderQuarter from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/loader-quarter.tsx";
 import {microcmsClient} from "../lib/MicroCMSClient.ts";
-
-type Form = {
-    mail: string;
-    message: string;
-}
+import {Form} from "../lib/types.ts"
 
 export const Contact = () => {
     const [status, setStatus] = useState<"sending" | "sent" | "error">();
     const [form, setForm] = useState<Form>({
-        mail: "",
+        email: "",
         message: "",
     });
     const submit = useCallback(async (event: Event) => {
         event.preventDefault();
         setStatus("sending");
-        const response = await microcmsClient.create<Form>({
+        await microcmsClient.create({
             endpoint: 'contact',
             content: {
-                email: form.mail,
+                email: form.email,
                 message: form.message,
             },
         })
@@ -45,7 +41,7 @@ export const Contact = () => {
                         <form onSubmit={submit} className="space-y-3">
                             {status === "error" && <h3 className="flex justify-center text-sm uppercase">error</h3>}
                             <div className="space-y-1">
-                                <label for="mail" className="text-sm uppercase">
+                                <label form="mail" className="text-sm uppercase">
                                     email
                                 </label>
 
@@ -59,7 +55,7 @@ export const Contact = () => {
                                     onInput={(e) => {
                                         setForm((current) => ({
                                             ...current,
-                                            mail: e.currentTarget.value,
+                                            email: e.currentTarget.value,
                                         }));
                                     }}/>
                             </div>
@@ -79,7 +75,7 @@ export const Contact = () => {
                                 >
                             </textarea>
                             </div>
-                            <div class="flex justify-center">
+                            <div className="flex justify-center">
                                 {status === "sending" ? (
                                     <IconLoaderQuarter class="text-sm uppercase w-6 h-6"/>
                                 ) : (
