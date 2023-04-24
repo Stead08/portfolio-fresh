@@ -5,7 +5,7 @@ import ArrowDown from "@tabler/icons/arrow-down.tsx";
 const Hero = () => {
     return (
         <div
-            className="min-w-screen flex flex-col items-center justify-between bg-gray-100 dark:bg-gray-700 sm:min-h-screen">
+            className="min-w-screen flex flex-col items-center justify-between bg-gray-100 sm:min-h-screen">
             <div className=""></div>
             <div className="sm:(mt-14 mb-14) mt-12 mb-4 flex flex-col items-center gap-y-5 gap-x-10 md:flex-row">
                 <img
@@ -17,7 +17,7 @@ const Hero = () => {
                     <h1 className="animate__animated animate__fadeInUp animate__delay-1s text-2xl font-bold sm:text-4xl">
                         <Balancer>
               <span
-                  className="dark:(from-cyan-400 to-teal-400) bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text">
+                  className=" bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text">
                 Stead08
               </span>{" "}
 

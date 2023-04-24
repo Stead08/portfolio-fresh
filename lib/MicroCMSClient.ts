@@ -1,4 +1,4 @@
-import { createClient } from "microcms";
+import {createClient} from "microcms";
 
 export const microcmsClient = createClient({
     serviceDomain: "vzh782w7u9",
