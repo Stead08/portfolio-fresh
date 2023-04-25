@@ -9,26 +9,32 @@ export const Contact = () => {
         email: "",
         message: "",
     });
-    const submit = useCallback(async (event: Event) => {
-        event.preventDefault();
-        setStatus("sending");
-        await microcmsClient.create({
-            endpoint: 'contact',
-            content: {
-                email: form.email,
-                message: form.message,
-            },
-        })
-            .then((res) => {
+    const submit = useCallback(
+        async (event: Event) => {
+            event.preventDefault();
+            setStatus("sending");
+            try {
+                setStatus("sending");
+                const response = await fetch("/api/contact", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        email: form.email,
+                        message: form.message,
+                    }),
+                });
+                console.log(response);
                 setStatus("sent");
-                console.log(res);
-            })
-            .catch((err) => {
-                    setStatus("error");
-                    console.log(err)
-                }
-            );
-    }, [form]);
+            } catch (e) {
+                console.error(e);
+                setStatus("error");
+            }
+        },
+        [form]
+    );
+
     return (
         <section
             id="contact"

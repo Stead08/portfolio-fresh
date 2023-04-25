@@ -7,5 +7,5 @@ type Endpoints = {
 };
 export const microcmsClient = createClient<Endpoints>({
     serviceDomain: "vzh782w7u9",
-    apiKey: "PSizteADWMZ4pNWQaEJtlbYDUvng9eAyWz7k",
+    apiKey: `${Deno.env.get("X-MICROCMS-API-KEY")}`,
 });
