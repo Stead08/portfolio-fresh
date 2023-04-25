@@ -34,7 +34,7 @@ export const Contact = () => {
             id="contact"
             className="lg:grid-cols-desktop grid scroll-mt-16 grid-cols-1 gap-x-10 gap-y-4"
         >
-            <h3 className="text-3xl font-bold uppercase text-gray-600 lg:text-center">Contact</h3>
+            <h3 className="text-3xl font-bold uppercase text-gray-600 dark:text-gray-400 lg:text-center">Contact</h3>
             <div>
                 {status === "sent" ? <h3 className="flex justify-center text-sm uppercase">sent</h3>
                     : (
