@@ -16,7 +16,8 @@ export const handler: Handlers = {
             .then(() => {
                 return new Response("", { status: Status.Created });
             })
-            .catch((err) => {
+            .catch((e) => {
+                console.error(e);
                 return new Response("", { status: Status.InternalServerError });
             });
     },

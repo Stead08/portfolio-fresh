@@ -4,7 +4,6 @@ export interface Work  {
     url: string,
 }
 
-
 export type Form = {
     email: string;
     message: string;
