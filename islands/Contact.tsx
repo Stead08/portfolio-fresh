@@ -1,6 +1,5 @@
 import {useCallback, useState} from "preact/hooks";
 import IconLoaderQuarter from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/loader-quarter.tsx";
-import {microcmsClient} from "../lib/MicroCMSClient.ts";
 import {Form} from "../lib/types.ts"
 
 export const Contact = () => {
@@ -25,7 +24,6 @@ export const Contact = () => {
                         message: form.message,
                     }),
                 });
-                console.log(response);
                 setStatus("sent");
             } catch (e) {
                 console.error(e);
