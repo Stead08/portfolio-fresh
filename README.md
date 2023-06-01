@@ -1,11 +1,12 @@
-# fresh project
+# Portfolio of Stead08
 
-### Usage
+page link
 
-Start the project:
+https://portfolio-fresh.deno.dev/
 
-```
-deno task start
-```
 
-This will watch the project directory and restart as necessary.
+FreshとMicroCMSを利用して作成したポートフォリオサイト.
+
+This is my portfolio, made with Fresh and MicroCMS (Headless CMS Service)
+
+
