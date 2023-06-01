@@ -20,6 +20,11 @@ const Works = () => {
             url: "https://stead08.github.io",
         },
         {
+            title: "自作PC構成",
+            description: "Next.js 13とChakra UIで構築した自作PC構成SPA",
+            url: "https://pccomp.vercel.app/"
+        },
+        {
             title: "Stead Profile",
             description: "FreshとMicroCMSで構築した自分の記事まとめサイト",
             url: "https://fresh-microcms.deno.dev/",

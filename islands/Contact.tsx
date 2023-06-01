@@ -25,7 +25,8 @@ export const Contact = () => {
                     }),
                 });
                 if (response.status !== 201) {
-                    setStatus("error");
+                    setStatus("error")
+                    return;
                 }
                 setStatus("sent");
             } catch (e) {
