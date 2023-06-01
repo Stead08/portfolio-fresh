@@ -12,6 +12,6 @@
     "react-wrap-balancer": "https://esm.sh/react-wrap-balancer@0.4.0?alias=react:preact/compat&deps=preact@10.13.1",
     "$std/": "https://deno.land/std@0.171.0/",
     "dotenv/": "https://deno.land/std/dotenv/",
-    "microcms": "https://esm.sh/microcms-ts-sdk"
+    "microcms": "https://esm.sh/microcms-js-sdk"
   }
 }

@@ -1,4 +1,4 @@
-import {microcmsClient} from "../../lib/MicroCMSClient.ts";
+import {microcmsClient} from "../../lib/MicroCMSClient.js";
 import {Handlers, Status} from "$fresh/server.ts";
 import {Form} from "../../lib/types.ts"
 
