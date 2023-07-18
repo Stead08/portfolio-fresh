@@ -1,10 +1,10 @@
-export interface Work  {
-    title: string,
-    description: string,
-    url: string,
+export interface Work {
+  title: string;
+  description: string;
+  url: string;
 }
 
 export type Form = {
-    email: string;
-    message: string;
-}
+  email: string;
+  message: string;
+};
