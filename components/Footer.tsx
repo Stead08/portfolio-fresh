@@ -4,29 +4,29 @@ type Props = {
   children: ComponentChildren;
 };
 
-export default function Footer({ children }: Props) {
+export default function Footer() {
   return (
-    <div class="bg-white flex flex-col md:flex-row w-full max-w-screen-lg gap-8 md:gap-16 px-8 py-8 text-sm">
-      <div class="flex-1 p-2">
-        <div class="flex items-center gap-1">
-          <div class="font-bold text-2xl">
+    <div className="bg-white flex flex-col md:flex-row w-full max-w-screen-lg gap-8 md:gap-16 px-8 py-8 text-sm">
+      <div className="flex-1 p-2">
+        <div className="flex items-center gap-1">
+          <div className="font-bold text-2xl">
             Stead08 Portfolio
           </div>
         </div>
-        <div class="text-gray-500">
+        <div className="text-gray-500">
           feel free to contact via a form bottom of the page.
         </div>
       </div>
 
-      <div class="text-gray-500 space-y-2">
-        <div class="text-xs">
+      <div className="text-gray-500 space-y-2">
+        <div className="text-xs">
           Copyright © 2023 Stead08<br />
           All right reserved.
         </div>
 
         <a
           href="https://github.com/Stead08/portfolio-fresh"
-          class="inline-block hover:text-black"
+          className="inline-block hover:text-black"
         >
           <BrandGithub />
         </a>

@@ -13,7 +13,7 @@ export const Skills = () => {
       >
         Skills Currently Learning
       </h3>
-      <div class="flex justify-around ">
+      <div className="flex justify-around ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="icon icon-tabler icon-tabler-brand-rust"
@@ -62,7 +62,7 @@ export const Skills = () => {
           <path d="M18 10.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75">
           </path>
         </svg>
-        <IconBrandDocker class="w-12 h-12" />
+        <IconBrandDocker className="w-12 h-12" />
       </div>
     </>
   );
