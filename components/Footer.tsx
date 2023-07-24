@@ -1,6 +1,4 @@
-
 import BrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/brand-github.tsx";
-
 
 export default function Footer() {
   return (

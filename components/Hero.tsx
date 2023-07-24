@@ -24,12 +24,14 @@ const Hero = () => {
           <h2 className="text-md animate__animated animate__fadeInUp animate__delay-2s font-medium text-cyan-700 dark:text-cyan-200 sm:text-xl">
             University Student in Japan
           </h2>
-          <button
-            type="button"
-            className="px-3 py-2 bg-white rounded border(gray-400 1) hover:bg-gray-200 flex gap-2"
-          >
-            <IconBrandGithub class="w-6 h-6" />Github
-          </button>
+          <a href="https://github.com/Stead08">
+            <button
+              type="button"
+              className="px-3 py-2 bg-white rounded border(gray-400 1) hover:bg-gray-200 flex gap-2"
+            >
+              <IconBrandGithub class="w-6 h-6" />Github
+            </button>
+          </a>
         </div>
       </div>
       <div className="animate__animated animate__fadeIn animate__delay-5s hidden pb-2 sm:block">
