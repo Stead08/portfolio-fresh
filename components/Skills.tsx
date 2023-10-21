@@ -1,9 +1,28 @@
+import { asset } from "$fresh/runtime.ts";
 import IconBrandTypescript from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-typescript.tsx";
 import IconBrandDocker from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-docker.tsx";
 import IconBrandPython from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-python.tsx";
 import IconBrandNextjs from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-nextjs.tsx";
 import IconBrandTailwind from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-tailwind.tsx";
 import IconBrandDeno from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-deno.tsx";
+
+
+interface ImagePath {
+  path: string;
+  alt: string;
+}
+
+interface ImagePaths {
+    [key: string]: ImagePath;
+}
+
+const ImagePaths: ImagePaths = {
+  haskell: {
+    path: "/static/HaskellLogo.png",
+    alt: "Haskell Logo"
+  }
+}
+
 export const Skills = () => {
   return (
     <>
@@ -36,6 +55,7 @@ export const Skills = () => {
         </svg>
         <IconBrandTypescript class="w-12 h-12" />
         <IconBrandPython class="w-12 h-12" />
+        <image class="w-12 h-12" src={asset("HaskellLogo.png")} alt={ImagePaths.haskell.alt}  />
         <IconBrandTailwind class="w-12 h-12" />
         <IconBrandNextjs class="w-12 h-12" />
         <IconBrandDeno class="w-12 h-12" />

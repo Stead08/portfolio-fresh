@@ -1,7 +1,7 @@
 const Description = () => {
   return (
     <article>
-      <h3 className="text-3xl font-bold uppercase p-5 text-gray-600 dark:text-gray-400 lg:text-center">
+      <h3 className="text-3xl font-bold uppercase text-gray-600 dark:text-gray-400 lg:text-center">
         Description
       </h3>
       <div className="bg-gray-50 shadow-lg rounded-lg p-2">
