@@ -6,29 +6,28 @@ import IconBrandNextjs from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/bran
 import IconBrandTailwind from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-tailwind.tsx";
 import IconBrandDeno from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-deno.tsx";
 
-
 interface ImagePath {
   path: string;
   alt: string;
 }
 
 interface ImagePaths {
-    [key: string]: ImagePath;
+  [key: string]: ImagePath;
 }
 
 const ImagePaths: ImagePaths = {
   haskell: {
     path: "/static/HaskellLogo.png",
-    alt: "Haskell Logo"
-  }
-}
+    alt: "Haskell Logo",
+  },
+};
 
 export const Skills = () => {
   return (
     <>
       <h3
         id="skills"
-        className="text-3xl font-bold uppercase text-gray-600 dark:text-gray-400 lg:text-center"
+        className="text-3xl font-bold uppercase text-gray-600 lg:text-center"
       >
         Skills Currently Learning
       </h3>
@@ -55,7 +54,11 @@ export const Skills = () => {
         </svg>
         <IconBrandTypescript class="w-12 h-12" />
         <IconBrandPython class="w-12 h-12" />
-        <image class="w-12 h-12" src={asset("HaskellLogo.png")} alt={ImagePaths.haskell.alt}  />
+        <image
+          class="w-12 h-12"
+          src={asset("HaskellLogo.png")}
+          alt={ImagePaths.haskell.alt}
+        />
         <IconBrandTailwind class="w-12 h-12" />
         <IconBrandNextjs class="w-12 h-12" />
         <IconBrandDeno class="w-12 h-12" />

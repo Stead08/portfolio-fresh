@@ -1,13 +1,12 @@
 const Description = () => {
   return (
-    <article>
-      <h3 className="text-3xl font-bold uppercase text-gray-600 dark:text-gray-400 lg:text-center">
+      <>
+      <h3 className="text-3xl font-bold uppercase text-gray-600 lg:text-center">
         Description
       </h3>
-      <div className="bg-gray-50 shadow-lg rounded-lg p-2">
-        <div className="bg-gray rounded-lg p-2 text-center h-full">
-          <h4 className="text-xl font-semibold mb-2">こんにちは</h4>
-          <p className="text-gray-700">
+        <div className="bg-gray-50 shadow-lg rounded-lg p-2 text-center h-fullf">
+          <h4 className="text-xl font-semibold">こんにちは</h4>
+          <p className="text-gray-700 mt-2">
             Stead08といいます。 24卒で新卒エンジニアとして働く予定です。
           </p>
           <p className="text-gray-700">
@@ -17,8 +16,7 @@ const Description = () => {
             好き嫌いなくどちらもできるように現在勉強しています。
           </p>
         </div>
-      </div>
-    </article>
+        </>
   );
 };
 

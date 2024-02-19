@@ -1,5 +1,6 @@
 import { Work } from "../lib/types.ts";
 const Project = (props: Work) => (
+    <article >
   <a href={props.url} rel="noopener" target="_blank">
     <div className="bg-gray-50 shadow-lg rounded-lg p-5">
       <div className="bg-gray-50 rounded-lg p-2 text-center h-full">
@@ -8,6 +9,7 @@ const Project = (props: Work) => (
       </div>
     </div>
   </a>
+    </article>
 );
 
 const Works = () => {
@@ -51,7 +53,7 @@ const Works = () => {
     <>
       <h3
         id="works"
-        className="text-3xl font-bold uppercase text-gray-600 dark:text-gray-400 lg:text-center"
+        className="text-3xl font-bold uppercase text-gray-600 lg:text-center"
       >
         Works
       </h3>
