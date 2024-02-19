@@ -8,8 +8,6 @@ import Skills from "../components/Skills.tsx";
 import Contact from "../islands/Contact.tsx";
 import Scroll from "../islands/Scroll.tsx";
 
-
-
 export default function Home() {
   return (
     <>

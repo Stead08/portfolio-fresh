@@ -1,12 +1,12 @@
 import { AppProps } from "$fresh/server.ts";
 import { css } from "twind/css";
 const globalStyles = css({
-  ':global': {
+  ":global": {
     html: {
-      scrollBehavior: 'smooth',
+      scrollBehavior: "smooth",
     },
   },
-})
+});
 
 export default function App({ Component }: AppProps) {
   return (

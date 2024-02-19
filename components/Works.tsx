@@ -1,15 +1,15 @@
 import { Work } from "../lib/types.ts";
 const Project = (props: Work) => (
-    <article >
-  <a href={props.url} rel="noopener" target="_blank">
-    <div className="bg-gray-50 shadow-lg rounded-lg p-5">
-      <div className="bg-gray-50 rounded-lg p-2 text-center h-full">
-        <h4 className="text-xl font-semibold mb-2">{props.title}</h4>
-        <p className="text-gray-700">{props.description}</p>
+  <article>
+    <a href={props.url} rel="noopener" target="_blank">
+      <div className="bg-gray-50 shadow-lg rounded-lg p-5">
+        <div className="bg-gray-50 rounded-lg p-2 text-center h-full">
+          <h4 className="text-xl font-semibold mb-2">{props.title}</h4>
+          <p className="text-gray-700">{props.description}</p>
+        </div>
       </div>
-    </div>
-  </a>
-    </article>
+    </a>
+  </article>
 );
 
 const Works = () => {

@@ -1,14 +1,14 @@
-import { useRef, useEffect } from "preact/hooks"
+import { useEffect, useRef } from "preact/hooks";
 
 export const Scroll = () => {
-  const ref = useRef<HTMLDivElement>(null)
+  const ref = useRef<HTMLDivElement>(null);
   const scrollTo = () => {
-        ref.current?.scrollIntoView({ behavior: "smooth" })
-  }
-    useEffect(() => {
-        scrollTo()
-    }, [])
-  return <div ref={ref} />
-}
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  useEffect(() => {
+    scrollTo();
+  }, []);
+  return <div ref={ref} />;
+};
 
 export default Scroll;
