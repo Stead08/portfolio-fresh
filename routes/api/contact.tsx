@@ -1,5 +1,5 @@
 import { microcmsClient } from "../../lib/MicroCMSClient.js";
-import { Handlers, Status } from "$fresh/server.ts";
+import { Handlers, STATUS_CODE } from "$fresh/server.ts";
 import { Form } from "../../lib/types.ts";
 
 export const handler: Handlers = {
@@ -14,11 +14,11 @@ export const handler: Handlers = {
         },
       })
       .then(() => {
-        return new Response("", { status: Status.Created });
+        return new Response("", { status: STATUS_CODE.Created });
       })
       .catch((e) => {
         console.error(e);
-        return new Response("", { status: Status.InternalServerError });
+        return new Response("", { status: STATUS_CODE.InternalServerError });
       });
   },
 };
