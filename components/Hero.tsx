@@ -22,7 +22,7 @@ const Hero = () => {
             </Balancer>
           </h1>
           <h2 className="text-md  font-medium text-cyan-700  sm:text-xl">
-            University Student in Japan
+            Web Developer in Japan
           </h2>
 
           <button
