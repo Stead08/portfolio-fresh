@@ -1,7 +1,7 @@
 import { asset } from "$fresh/runtime.ts";
 import Balancer from "react-wrap-balancer";
 import ArrowDown from "@tabler/icons/arrow-down.tsx";
-import IconBrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-github.tsx";
+import IconBrandGithub from "@tabler/icons/brand-github.tsx";
 
 const Hero = () => {
   return (
