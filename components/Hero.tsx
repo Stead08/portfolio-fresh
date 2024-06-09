@@ -26,7 +26,7 @@ const Hero = () => {
           </h2>
 
           <button
-            type="button"
+              type="button"
             className="px-3 py-2 mt-3 ml-auto mr-auto md:ml-0 bg-white rounded border(gray-400 1) hover:bg-gray-200 flex gap-2 items-center "
             onclick="location.href=`https://github.com/Stead08`"
           >

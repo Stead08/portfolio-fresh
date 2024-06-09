@@ -16,7 +16,7 @@ export default function Footer() {
 
       <div className="text-gray-500 space-y-2">
         <div className="text-xs">
-          Copyright © 2023 Stead08<br />
+          Copyright © 2024 Stead08<br />
           All right reserved.
         </div>
 
