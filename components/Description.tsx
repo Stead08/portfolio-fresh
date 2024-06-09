@@ -8,8 +8,10 @@ const Description = () => {
         <h4 className="text-xl mx-auto w-full md:w-auto font-semibold">こんにちは</h4>
         <p className="block mx-auto w-full md:w-auto text-gray-700 mt-2 mb-2 ">
           Stead08といいます。 24卒でフロントエンドエンジニアとして働いてます。<br/>
+          経済学部在学中にWeb系の勉強を始めました。<br/>
           フロントエンドもサーバーサイドの方に興味があります。<br/>
-          好き嫌いなくどちらもできるように現在勉強しています。
+          今は好き嫌いなくどちらもできるように現在勉強しています。<br/>
+          将来はインフラ系の知識を持ち合わせたフロントエンドorバックエンドエンジニアになりたいです。
         </p>
       </div>
     </>
