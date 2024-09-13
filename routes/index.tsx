@@ -6,7 +6,6 @@ import Footer from "../components/Footer.tsx";
 import Works from "../components/Works.tsx";
 import Skills from "../components/Skills.tsx";
 import Contact from "../islands/Contact.tsx";
-import Scroll from "../islands/Scroll.tsx";
 import {UsingSkills} from "../components/UsingSkills.tsx";
 
 export default function Home() {
