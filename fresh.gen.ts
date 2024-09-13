@@ -8,7 +8,7 @@ import * as $api_contact from "./routes/api/contact.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $Contact from "./islands/Contact.tsx";
 import * as $Scroll from "./islands/Scroll.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
