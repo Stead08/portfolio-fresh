@@ -11,11 +11,11 @@ interface Skill {
 const skills = [
   {
     category: "Programming Language",
-    name: "TypeScript, Rust, Python, Haskell",
+    name: "TypeScript, Rust, Python",
   },
   {
     category: "Frontend UI Library",
-    name: "React, Preact, Vue",
+    name: "React, Preact, Vue, Svelte, Qwik",
   },
   {
     category: "Frontend CSS Framework",
@@ -23,7 +23,7 @@ const skills = [
   },
   {
     category: "Frontend Framework",
-    name: "Next.js, Nuxt.js, Remix, Astro",
+    name: "Remix, Nuxt.js, Astro, Next.js, Qwik City",
   },
   {
     category: "Frontend State Management",
