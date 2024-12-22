@@ -17,7 +17,7 @@ const Works = () => {
     {
       title: "Stead08のポートフォリオ",
       description: "このサイトです。",
-      url: "https://stead08.github.io",
+      url: "portfolio.stead08.dev",
     },
     {
       title: "自作PC構成",
@@ -25,28 +25,15 @@ const Works = () => {
       url: "https://pccomp.vercel.app/",
     },
     {
-      title: "Stead Profile",
-      description: "FreshとMicroCMSで構築した自分の記事まとめサイト",
-      url: "https://fresh-microcms.deno.dev/",
+      title: "Webp Encoder",
+      description: "PNG,JPEGをWebpに変換するWebアプリです。Wasmによってブラウザで変換しています。",
+      url: "https://img-optimizer.stead08.dev/",
     },
     {
-      title: "距離・運賃計算システム",
-      description: "ゼミの研究のために作ったものです。",
-      url:
-        "https://stead08-omisegohanproject-streamlit-app-04qdaj.streamlit.app/",
-    },
-    {
-      title: "シラバス検索システム",
-      description:
-        "ローカルでの使用を想定しているので外部からはアクセスできません。",
-      url: "https://github.com/Stead08/syllabus_search_system",
-    },
-    {
-      title: "ブログサイト",
-      description: "Next.jsとsupabaseで構築したブログサイト（モック）です。",
-      url:
-        "https://nextjs-supabase-blog-practice-kwpusq5nf-stead08.vercel.app/",
-    },
+      title: "Edge CMS",
+      description: "Edge CMSは、インフラをCloudflare Workersで構築したコンテンツ管理システムです。",
+      url: "https://github.com/Stead08/edge-cms",
+    }
   ];
 
   return (
