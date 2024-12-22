@@ -1,4 +1,4 @@
-import { AppProps } from "$fresh/server.ts";
+import { PageProps } from "$fresh/server.ts";
 import { css } from "twind/css";
 const globalStyles = css({
   ":global": {
@@ -8,9 +8,9 @@ const globalStyles = css({
   },
 });
 
-export default function App({ Component }: AppProps) {
+export default function App({ Component }: PageProps) {
   return (
-    <html class={globalStyles}>
+    <html className={globalStyles}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
