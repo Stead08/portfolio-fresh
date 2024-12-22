@@ -1,12 +1,12 @@
 {
   "tasks": {
-    "start": "deno run -A --allow-env --watch=static/,routes/ dev.ts",
+    "start": "deno run -A --watch=static/,routes/ dev.ts",
     "build": "deno run -A dev.ts build",
     "preview": "deno run -A main.ts"
   },
   "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
   "imports": {
-    "$fresh/": "https://deno.land/x/fresh@1.7.1/",
+    "$fresh/": "https://deno.land/x/fresh@1.7.3/",
     "preact": "https://esm.sh/preact@10.22.1",
     "preact/": "https://esm.sh/preact@10.22.1/",
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.5.10",
